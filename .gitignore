@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+__pycache__/
+*.csv
+!data/etf_drl_state_space.csv
+ppo_portfolio_tensorboard/
