@@ -7,7 +7,7 @@ An autonomous, friction-aware asset allocation engine built on continuous Deep R
 ## 📊 Project Architecture & State Space
 The optimization engine models capital allocation as a continuous Markov Decision Process (MDP) executed within a custom OpenAI Gymnasium container. 
 
-The engine ingests a high-fidelity **84-dimensional continuous feature matrix** spanning an 11-year dataset (January 2006 – May 2026) containing 5,112 daily trading observations:
+The engine ingests a high-fidelity **84-dimensional continuous feature matrix** spanning an 20-year dataset (January 2006 – May 2026) containing 5,112 daily trading observations:
 * **56 Asset-Level Features:** 1-day, 5-day, and 21-day continuous log returns; 20-day rolling annualized volatility; price-to-SMA20 trend ratios; and normalized RSI indicators for each asset.
 * **28 Global Correlation Features:** The extracted lower triangle of a moving 8×8 cross-asset Pearson correlation matrix to actively capture changing diversification boundaries across regimes.
 
